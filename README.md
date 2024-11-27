@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Getting Started with Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+News Search Microservice
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project implements a News Search Microservice to fetch and organize news articles based on user-defined time intervals. The service uses the "Everything" API from NewsAPI to retrieve data and groups results based on publishedAt dates. Users can specify interval types (e.g., hours, days) and duration. The application is designed with production readiness in mind, ensuring performance, scalability, and security.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dynamic Grouping: Results are grouped into buckets based on intervals (e.g., last N hours, days, weeks).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Customizable Inputs: Users can define N (duration) and interval types (e.g., minutes, days). Defaults to 12-hour intervals if no input is provided.
+
+Offline Mode: The service can toggle to offline mode and function with cached or fallback data.
+
+Resilient Design: Handles cases where the NewsAPI is unavailable and continues to deliver results.
+
+User Interfaces: Accessible via a web browser, Postman, or CLI (JSON response).
+
+Security: Sensitive information (e.g., API keys) is encrypted and secured.
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
