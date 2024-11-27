@@ -20,8 +20,44 @@ User Interfaces: Accessible via a web browser, Postman, or CLI (JSON response).
 
 Security: Sensitive information (e.g., API keys) is encrypted and secured.
 
-### `npm test`
+### `Frontend`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Reactjs](https://raw.githubusercontent.com/m879/news-api-microservice/master/Reactjs.png)
+
+### `Sequence Diagram`
+
+![Sequence Diagram](https://raw.githubusercontent.com/m879/news-api-microservice/master/sequence%20diagram.png)
+
+
+### Security and Performance
+
+API keys are stored securely using encrypted properties.
+
+TDD and BDD principles are followed for high-quality code.
+
+Optimized queries and caching ensure fast responses.
+
+
+### Backend Setup
+
+Clone the repository
+
+Build the Spring Boot application : mvn clean install
+
+Run the application: java -jar target/news-service.jar
+
+### Frontend Setup
+
+Install dependencies: npm install
+
+Start the React application: npm start
+
+
+
+
+
+
+
+
+
 
